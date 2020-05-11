@@ -32,8 +32,12 @@ elif marks >= 40 and marks <= 49:
 else:
     print("F")
 
-# list1 = [1,3,5,7]
-#
-# print(15 in list1)
-#
-# print("var3 is smaller than var2")
+# You can drive or not in USA?
+print("Tell me what is your age? ")
+age = int(input())
+if age < 18:
+    print("You can't drive here in USA")
+elif 18 <= age <= 21:
+    print("You can go for a learner's license and can drive with an assistance")
+elif age > 21:
+    print("You can legally drive in USA independently")

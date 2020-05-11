@@ -27,5 +27,8 @@ print("\"Tofael\"")
 print("'Tofael'")  # Also possible this way
 print('"Tofael"')
 
+print("C:\Windows")
+print("C:\'Windows'")
+
 # 6(use of \r)
 print('Hello Sir!\r 347-653-7214')  # using \r --> return carriage
