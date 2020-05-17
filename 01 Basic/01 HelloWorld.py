@@ -1,5 +1,7 @@
 # 1: To comment out a line click command /
 """There is another way to comment out is by 3 double quotation"""
+import datetime
+print(datetime.datetime.now())
 
 # 2
 print("Hello World!")
