@@ -9,10 +9,15 @@ str1 = "HelloWorld123"
 str2 = "HelloWorld"
 str3 = "123"
 str4 = "Hello World 123"
-print(str1.isalnum())
+print(str1.isalnum())  # it means either alphabetical or numeric
 print(str2.isalnum())
 print(str3.isalnum())
-print(str4.isalnum(), "\n")
+print(str4.isalnum(), "\n")  # False -- because contain spaces, which is regarded as special
+
+print(str3.isalnum())
+print(str3.isnumeric())
+print(str3.isdecimal())
+print(str3.isdigit(), "\n")
 
 
 print(myName.endswith("phic"))
