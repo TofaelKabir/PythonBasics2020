@@ -1,3 +1,6 @@
+print("\n----- Use of pass -----")
+
+
 class Student:  # syntax of creating class, class name will be in Upper case
     pass
 
@@ -8,4 +11,3 @@ st1.name = "Tanvir"
 st1.gpa = 3.78
 print(f"ID:{st1.id}, Name:{st1.name}, GPA: {st1.gpa}")
 print("............................................")
-

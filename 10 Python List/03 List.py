@@ -1,4 +1,4 @@
-print("# 1 All about List\n")
+print("\n----- Mixed elements in List -----")
 
 myInfo = ["Tofael", 44, 3.999, "625W 57th st", "Mentor", 3476537214]
 
@@ -15,3 +15,5 @@ print("Value present in index 5 is: ", myInfo[5])
 print("Value present in index (length -1) is: ", myInfo[-1])
 print("Value present in index (length -2) is: ", myInfo[-2])
 print("Value present in index (length -3) is: ", myInfo[-3])
+
+

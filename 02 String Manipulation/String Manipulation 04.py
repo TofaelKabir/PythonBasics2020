@@ -107,7 +107,7 @@ x = txt.isdecimal()
 print(x)
 
 print("\n----- Use of join() -----")
-myTuple = ("Sohag", "Orfat", "Sharif")  # Tuple is immutable and () is used
+myTuple = ("Sohag", "Orfat", "Sharif")  # Tuple is immutable and () is used instead of []
 x = "*".join(myTuple)
 print(x)
 
