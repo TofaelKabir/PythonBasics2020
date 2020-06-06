@@ -12,10 +12,6 @@ A list of common exceptions that can be thrown from a normal python program is g
     IOError: It occurs when Input Output operation fails.
     EOFError: It occurs when the end of the file is reached, and yet operations are being performed.
 """
-# https://www.javatpoint.com/python-exception-handling
-
-print("\n----- Exception handling in python -----")
-# Python provides the flexibility not to specify the name of exception with the except statement.
 
 print("\n----- The except statement with exception -----")
 try:
