@@ -1,14 +1,19 @@
-emp = ["John", 102, "USA"]
-Dep1 = ["CS", 10]
-Dep2 = ["IT", 11]
-HOD_CS = [10, "Mr. Holding"]
-HOD_IT = [11, "Mr. Bewon"]
-print("printing employee data...")
-# Can't understand from below
-print("Name : %s, ID: %d, Country: %s" % (emp[0], emp[1], emp[2]))
-print("printing departments...")
-print("Department 1:\nName: %s, ID: %d\nDepartment 2:\nName: %s, ID: %s" % (Dep1[0], Dep2[1], Dep2[0], Dep2[1]))
-print("HOD Details ....")
-print("CS HOD Name: %s, Id: %d" % (HOD_CS[1], HOD_CS[0]))
-print("IT HOD Name: %s, Id: %d" % (HOD_IT[1], HOD_IT[0]))
-print(type(emp), type(Dep1), type(Dep2), type(HOD_CS), type(HOD_IT))
+print("\n----- Mixed elements in List -----")
+
+myInfo = ["Tofael", 44, 3.999, "625W 57th st", "Mentor", 3476537214]
+
+print("The complete List: ", myInfo)
+print("The length of the List is: ", len(myInfo))
+
+print("Value present in index 0 is: ", myInfo[0])
+print("Value present in index 1 is: ", myInfo[1])
+print("Value present in index 2 is: ", myInfo[2])
+print("Value present in index 3 is: ", myInfo[3])
+print("Value present in index 4 is: ", myInfo[4])
+print("Value present in index 5 is: ", myInfo[5])
+# print(myInfo[6])
+print("Value present in index (length -1) is: ", myInfo[-1])
+print("Value present in index (length -2) is: ", myInfo[-2])
+print("Value present in index (length -3) is: ", myInfo[-3])
+
+
