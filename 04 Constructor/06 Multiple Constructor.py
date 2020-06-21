@@ -21,7 +21,7 @@ class Employee:
         print(f"Emp_Name: {self.name}, Emp_ID: {self.id}")
 
 
-emp1 = Employee()
+emp1 = Employee()  # why can't use parameterized value?
 emp1.display()
 print("---------------------------------")
 emp2 = Employee()

@@ -1,4 +1,4 @@
-# Polymorphism-->many forms
+# Python Polymorphism-->many forms
 
 # Built in polymorphic function
 print(len("Sohag"))  # len()---> is counting length of string
