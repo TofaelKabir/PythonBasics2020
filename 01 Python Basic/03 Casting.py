@@ -1,17 +1,20 @@
 print("# 1 Why we need Casting\n")
 a = '5'
 b = '10'
-print(a, b)  # Any type of Variable is presenting side by side with a space, no concatenation
-print(a + b)  # Here is a complete concatenation without space for similar type of variable, here String + String
+print(a, b)  # 5 10
+# Any type of Variable is presenting side by side with a space, no concatenation
+print(a + b)  # 510
+# Here is a complete concatenation without space for similar type of variable, here String + String
 
 a = 5
 b = 10
-print(a, b)
-print(a + b)  # Here is a complete concatenation without space for similar type of variable, here int + int
+print(a, b) # 5 10
+print(a + b)  # 15
+# Here is a complete concatenation without space for similar type of variable, here int + int
 
 a = 5
 b = '10'
-print(a, b)
+print(a, b)  # 5 10
 # print(a+b)
 # The above line is not working as int and String can't be concatenate
 # We can solve this problem by casting
@@ -26,12 +29,12 @@ print(int(a) + int(b))
 a = '5.6'
 b = '10.7'
 print(a, b)
-print(float(a) + float(b))  # why 16.299999999999997
+print(float(a) + float(b))  # why 16.299999999999997 ?? float contain 15-16 value after decimal
 
 a = 5
 b = 10
 print(a, b)
-print(str(a) + str(b))
+print(str(a) + str(b))  #510
 
 a = 5
 b = '10'
@@ -40,7 +43,7 @@ print(a + int(b))
 print("We can cast (int to String) and (String to int) by the above way\n")
 
 # 3 --- before typecasting
-num1 = input("Enter First Number: ")  # 5
+num1 = input("Enter First Number: ")  # input presented as string always
 num2 = input("Enter Second Number: ")  # 5
 
 result1 = num1 + num2

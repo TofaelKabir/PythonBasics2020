@@ -10,7 +10,7 @@
  """
 # Need to see them, didn't check yet
 # Setting the Data Type:--->assign a value to a variable
-s = "Sohag"
+# s = "Sohag"
 i = 20
 r = range(8)
 print(r)  # range(0, 8)

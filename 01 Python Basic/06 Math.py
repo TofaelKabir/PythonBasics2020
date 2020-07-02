@@ -1,8 +1,8 @@
-# Calculation of Rectangular shape--> (base * height) * 0.5
+# Calculation of Triangular shape--> (base * height) * 0.5
 base = float(input("Enter base: "))
 height = float(input("Enter height: "))
-rectangular_area = (base * height) * 0.5
-print("Calculation of Area is: ", rectangular_area, "\n")
+triangular_area = (base * height) * 0.5
+print("Calculation of Area is: ", triangular_area, "\n")
 
 # Calculation of circular shape --> (pie - r - square)
 radius = float(input("Enter radius: "))

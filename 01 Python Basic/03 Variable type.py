@@ -1,4 +1,9 @@
 print("\n----- define variables in a single line -----")
+a=12
+b=13
+c=24
+# Generally we write like above
+
 a, b, c = 10, 20, 30
 print("a=", a)  # 10
 print("b=", b)  # 20
@@ -10,16 +15,16 @@ print("x=", x)  # Hello
 print("y=", y)  # Hello
 
 print("\n----- Use of global and local variable -----")
-name1 = "I am outside of function/method --> global variable"
+name1 = "I am outside of function --> global variable"
 print(name1)
 
 
 def var():
-    name2 = "I am inside of function/method --> local variable"
+    name2 = "I am inside of function --> local variable"
     print(name2)
 
 
-var()  # The method is called here to print name 2
+var()  # The function is called here to print name 2
 
 print("\n----- Same name for global & local variable -----")
 age = 40
@@ -34,18 +39,20 @@ def varAge():
 varAge()
 
 print("\n----- uses of local and global -----")
-id1 = 101
+id1 = 101  # global variable
 
 
 def varId():
-    id2 = 102
-    print("Global id is called from inside the function", id1)
-    print("Local id is called from inside the function", id2)
+    id2 = 102  # local variable
+    print("Global id can called, inside the function", id1)
+    print("Local id can called, inside the function", id2)
 
 
 varId()
 print("global id is called out side of the function:", id1)
 print("local id is called out side of the function:", "sorry first make id2 global, not possible to call")
+
+# local variable can't be call outside the function
 
 print("\n----- How to call a global variable from the function 01 -----")
 city = "NY"

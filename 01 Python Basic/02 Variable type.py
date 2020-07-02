@@ -1,14 +1,21 @@
+print("\n-------------------------------------------------")
 print("# 1 (String type 01, Presented by single or double quotation)\n")
 name1 = "Mohammad"
-name2 = 'T'
-name3 = 'Kabir'
 print(name1)
-print(name2)
-print(name3)
 print(type(name1))
+
+name2 = 'T'
+print(name2)
 print(type(name2))
+
+name3 = 'Kabir'
+print(name3)
 print(type(name3))
+
+print("\n-------------------------------------------------")
+print(name1 + name2 + name3)
 print(name1, name2, name3)
+
 print(name1, end=" ")
 print(name2, name3)
 print(name1 + name2 + name3)
@@ -35,8 +42,8 @@ print("\n")
 print("# 5 (boolean type 01)\n")
 country1 = "USA"
 country2 = "BD"
-print("Is Country 1 and Country2 is same?", country1==country2)
-print("Type is:", type(country1==country2))
+print("Is Country 1 and Country2 is same?", country1 == country2)  # == Equality operator
+print("Type is:", type(country1 == country2))
 print("\n")
 
 print("# 6 (boolean type 02)\n")

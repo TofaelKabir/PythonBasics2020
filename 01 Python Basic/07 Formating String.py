@@ -1,9 +1,12 @@
 num1 = 10
 num2 = 15
-print("sum of num2 and num3 is: ", num1 + num2, "\n")  # 25
+print("sum of num1 and num2 is: ", num1 + num2, "\n")  # 25
 
 # To print-->10+15=25
-print(f"{num1}+{num2} = {num1 + num2}")  # f for formatted text, {} for internal cal, + or = for dir print  r-->raw
+print(f"{num1}+{num2} = {num1 + num2}")  # f for formatted text, {} for internal cal
+print(r"{num1}+{num2} = {num1 + num2}")  # r-->raw
+# print(r"hOPE YOU UNDERSTAND RAW")
+# print(f"hI i am going to add {num1}+{num2} = {num1 + num2}")
 print(f"Add:{num1}+{num2} = Sum: {num1 + num2}")
 
 # To print-->20+10=30

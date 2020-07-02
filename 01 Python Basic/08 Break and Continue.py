@@ -4,7 +4,7 @@ for a in range(1, 20, 3):
     print(a)
 print("After use of break the output is below:")
 for a in range(1, 20, 3):
-    if a == 16:
+    if a == 13:  # what happen if you put 12?
         break
     print(a)
 
@@ -26,7 +26,7 @@ for x in range(1, 20, 3):
     if x % 2 == 0:
         continue
     print(x)
-# Not working, have to see again
+# Not working, have to see again  #Shohag
 # print("\n------ Use of continue in While loop ---------")
 # y = 1
 # while y <= 10:
