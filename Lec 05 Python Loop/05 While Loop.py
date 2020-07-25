@@ -2,7 +2,7 @@ print("----- Use of While Loop 01 -----\n")
 i = 1
 while i < 5:
     print(i)
-    i = i + 1
+    i = i + 1  # we can also write i+=1
 
 print("----- Use of While Loop 02 -----\n")
 i = 0
@@ -38,4 +38,27 @@ while index < length:
     index = index + 1
 # print("")  why this is put Shohag?
 
+# Infinite loop, better stop while running
+# x = 1
+# while True:
+#     print(x)
+#     x += 1
+# to solve this problem -
+x = 1
+while True:
+    print(x)
+    x += 1
+    if x > 10:
+        break
 
+# sum 1 to 10
+total = 0
+for i in range(1, 11):
+    print(i)
+    total += i  # or sum = sum +i
+print("Total is {total}".format(total=total))
+
+# String characters by for loop
+title = 'Macbook Air.'
+for char in title:
+    print(char)

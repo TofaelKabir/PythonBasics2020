@@ -4,7 +4,7 @@ b=13
 c=24
 # Generally we write like above
 
-a, b, c = 10, 20, 30
+a, b, c = 10, 20, 30  # multiple variable assigned
 print("a=", a)  # 10
 print("b=", b)  # 20
 print("c=", c)  # 30

@@ -7,8 +7,8 @@ print(a * b)  # Multiplication
 print(a / b)  # Division ---> Output 3.5
 
 print(a // b)  # actual result is 3.5, but will show up 3, The modulus will not show up
-print(a % b)  # 1, The modulus will only show up
-print(a ** 2)  # a to the power 2, 7x7
+print(a % b)  # 1, The modulus/remainder will only show up
+print(a ** 2)  # Exponentiation, a to the power 2, 7x7
 print(b ** 4)  # b to the power 4, 2x2x2x2
 print("\n")
 

@@ -5,11 +5,13 @@ To delete an entire tuple, we can use the del keyword with the tuple name.
 tuple = (1, 2, 3, 4, 5, 6, 'physics', 'chemistry', 1997, 2000)
 # If we change tuple to tp, the whole execution doesn't work, need to check why?
 print(tuple)
-# del tuple1[0]
-# print(tuple1)
+# del tuple[0]  # TypeError: 'tuple' object doesn't support item deletion
+# print(tuple)
 del tuple
-print(tuple)  # See the outcome from this 2
-print(type(tuple))
+print("-----------------------------------------")
+print(tuple)  # See the outcome from this, not clear
+print("-----------------------------------------")
+print(type(tuple))  # See the outcome from this, not clear
 
 """
 1. Using tuple instead of list gives us a clear idea that tuple data is constant and must not be changed.

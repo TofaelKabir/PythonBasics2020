@@ -1,11 +1,5 @@
-""" python data type:
-text type: str
-numeric type: int, float, complex
-sequenct type: list, tuple, range
-mapping type: dict
-set type:set, forzenset
-boolean type: bool
-binary type: bytes, bytearray, memoryview """
+# need to teach it, didn't teach
+
 
 # Setting the Data Type: ---> assign a value to a variable
 s = "Shohag"

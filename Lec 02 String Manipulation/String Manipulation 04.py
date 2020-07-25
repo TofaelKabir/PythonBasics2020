@@ -54,14 +54,14 @@ print("upper():", txt.upper())
 print("lower():", txt.lower())
 print("swapcase():", txt.swapcase())
 print("title():", txt.title())
-print("casefold():", txt.casefold())
+print("casefold():", txt.casefold())  # confusion
 print("isupper():", txt.isupper())
 print("isupper():", txt.islower())
 print("isupper():", txt.istitle())
 
 print("\n----- Use of center() -- after how many space the word will start.-----")
 txt = "banana"
-print(txt.center(30))
+print(txt.center(35))
 
 print("\n----- Use of count() ----- Time of occurrence -----")
 txt = "My name is Sohag. This name is very common in Bangladesh."
@@ -77,14 +77,16 @@ print(txt.startswith("My"))
 
 print("\n----- Use of expandtabs() --- how many spaces between tabs -----")
 txt = "H\te\tl\tl\to"
-x = txt.expandtabs(5)
+x = txt.expandtabs(12)
 print(x)
 
 print("\n----- Use of find() --- to find the position of any letter or words-----------------------------")
 # finds the first occurrence of the specified value.
 # almost the same as the index()--But index() method raises an exception and find() returns -1 if not found
 txt = "My name is Sohag"
-x = txt.find("Z")
+x = txt.find("g")
+print(x)  # Will not throw Exception if it is absent
+x = txt.find("z")
 print(x)  # Will not throw Exception if it is absent
 
 print("\n----- Use of index() --- to find the position of any letter or words")
@@ -97,18 +99,19 @@ print(x)
 print("\n----- Use of format() --- with fraction (f)--------------------")
 txt = "Total cost is {price:.5f} dollars!"  # 2f-->.00, if 3f-->.00
 print(txt.format(price=49))
+print(txt.format(price=49.846587346856483))
 
-print("\n----- Use of isdecimal() -----")
-# True if all the characters are decimals (0-9).
-# method is used on unicode objects.  (we can use the unicode chart)
-txt = "0"
-# txt = "\u0033" #unicode for 3
-x = txt.isdecimal()
-print(x)
+# print("\n----- Use of isdecimal() -----")
+# # True if all the characters are decimals (0-9).
+# # method is used on unicode objects.  (we can use the unicode chart)
+# txt = "0"
+# # txt = "\u0033" #unicode for 3
+# x = txt.isdecimal()
+# print(x)
 
 print("\n----- Use of join() -----")
 myTuple = ("Sohag", "Orfat", "Sharif")  # Tuple is immutable and () is used instead of []
-x = "*".join(myTuple)
+x = " * ".join(myTuple)
 print(x)
 
 d2 = {"Ankur": "Burger",
@@ -118,7 +121,7 @@ d2 = {"Ankur": "Burger",
       "Kaitlin": "Home",
       "Jenifer": {"A": "Kids", "B": "Burger", "C": "Chicken"},
       }
-y = "*  *".join(d2)  # d2 is a list here, will join the key, not the value
+y = "*  *".join(d2)  # d2 is a dictionary here, will join the key, not the value
 print(y)
 
 s = {"Sohag", "Sharif", "Orfat"}
@@ -130,14 +133,14 @@ print("\n----- Use of ljust() -----")
 txt = "S"
 x = txt.ljust(5, "o")  # Total 5 including the txt, txt will be on most left then what you want to add
 print(x)
-print(x, "des ne.")
+print(x, "des ne.")   # Meaning --- Really? in japanese
 # left justified version of the word "Soooo" -->between first char "S" and next str "o"
 # by default it will take space but we can use another arg instead of space-->x = txt.ljust(5,"#")--> Soooo des ne.
 
 print("\n----- Use of rjust() -----")
 # Returns a right justified version of the string
 txt = "K"
-y = txt.rjust(5, "O")  # Total 5 including the txt, txt will be on most right then what you want to add
+y = txt.rjust(10, "O")  # Total 5 including the txt, txt will be on most right then what you want to add
 print(y)
 print(y, "Got it")
 # right justified version of the word "OOOOK" -->between last char "K" and previous str "O"
@@ -160,8 +163,8 @@ print("\n----- Use of partition() --- Take the first occurrence from multiple by
 # 2 - the "match"
 # 3 - after the "match"
 
-txt = "His name is Sharif. Mr. Sharif is a gentale man."
-x = txt.partition("Sharif")
+txt = "His name is Sharif. Mr. Sharif is a gentle man."
+x = txt.partition("Sharif")  # if repeated, then it takes the first one, it always takes place in the middle
 print(x)
 y = txt.partition("His")
 print(y)
@@ -175,34 +178,34 @@ print(a)
 print("\n----- Use of zfill() -----")
 # Fill the string with zeros until it is nth characters long
 txt = "56"
-x = txt.zfill(5)
+x = txt.zfill(7)
 print(x)  # 00056
 
 # Can't understand it
-print("\n----- Use of split(), rsplit() -----")
-txt = "apple, banana, cherry"
-x = txt.split(", ")
-print(x)
-y = txt.split("* ")
-print(y)
-y = txt.rsplit(", ")
-print(y)
+# print("\n----- Use of split(), rsplit() -----")
+# txt = "apple, banana, cherry"
+# x = txt.split(", ")
+# print(x)
+# y = txt.split("* ")  # why * is not coming
+# print(y)
+# y = txt.rsplit(", ")
+# print(y)
 
-# Confused
-print("\n----- use of splitlines() -----")
-# Split a string into a list where each line is a list item:
-# The splitting is done at line breaks.
-txt = "Thank you all\nLet's start our session."
-x = txt.splitlines()
-print(x)
-
-print("\n")
-a = "Sohag"[0]
-print(a)
-b = "Sohag"[1]
-print(b)
-c = "Sohag"[2]
-print(c)
-
-print("----- Special Command shortcut --- to switch to prev by ctrl (^) E -----")
-print("-------------------------------------")
+# # Confused
+# print("\n----- use of splitlines() -----")
+# # Split a string into a list where each line is a list item:
+# # The splitting is done at line breaks.
+# txt = "Thank you all\nLet's start our session."
+# x = txt.splitlines()
+# print(x)
+#
+# print("\n")
+# a = "Sohag"[0]
+# print(a)
+# b = "Sohag"[1]
+# print(b)
+# c = "Sohag"[2]
+# print(c)
+#
+# # print("----- Special Command shortcut --- to switch to prev by ctrl (^) E -----")
+# # print("-------------------------------------")

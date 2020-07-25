@@ -1,8 +1,14 @@
 # dictionary is nothing but key value pairs, a dictionary is a collection of a unordered, changeable and indexed
 
-d1 = {}
-
+d1 = {}  # Empty dictionary
+print(d1)
 print(type(d1))
+d1['name'] = 'Tofael'
+d1['age'] = 65
+d1['sex'] = 'M'
+print(d1['name'], d1['age'], d1['sex'], sep=' | ')
+print(d1['name'], d1['age'], d1['sex'])
+
 
 d2 = {"harry": "burger",
       "Arshad": "fish",

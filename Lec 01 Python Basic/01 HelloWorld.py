@@ -29,6 +29,7 @@ print("\tI am using backslash t to get the tab option. \tDid you get it? \n\tCan
 print("\n")
 
 # 5 (use of only \)
+# Printing single and double quote
 print("\n-------------------------------------------------------------")
 print("\'Tofael\'")  # only back slash tell the program to ignore the next symbol of it.
 print('\"Tofael\"')

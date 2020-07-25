@@ -7,8 +7,8 @@ List03 = [1, 2, 3]
 List04 = [1, 2, 3]
 
 print(List01)
-print(max(List01))
-print(min(List01))
+print("Maximum number: ", max(List01))
+print("Minimum number: ", min(List01))
 
 print("\n----- Use of list() -----")
 aTuple = (123, 'xyz', 'zara', 'abc')
@@ -42,10 +42,13 @@ print("\n")
 even = [6, 8, 2, 4]  # Newly added
 even.sort()
 print(even)
+even.sort()  # sorting again
+print(even)
 even.sort(reverse=True)  # sort in reverse order
 print(even)
 print("\n")
 
+# new
 # It returns empty list if the list is the list is empty. See the example below.
 apple = []
 apple.reverse()
@@ -60,13 +63,14 @@ if apple == apple2:
 else:
     print("Not equal")
 
-list = ['1', '2', '3']
-for l in list:  # Iterating list
+list5 = ['1', '2', '3', '6', '5']
+for l in list5:  # Iterating list
     print(l)
-list.pop(2)
+list5.pop()
+list5.pop(0)
 
 print("After poping:")
-for l in list:  # Iterating list
+for l in list5:  # Iterating list
     print(l)
 # https://www.geeksforgeeks.org/python-2-number-cmplist-method/
 # list1, list2 = [123, 'xyz'], [456, 'abc']

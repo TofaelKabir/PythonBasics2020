@@ -1,3 +1,4 @@
+print("\n.......................................................")
 myName = "Subdermatoglyphic"
 print(myName)
 print(len(myName))  # length also include the space
@@ -5,27 +6,33 @@ print(len(myName))  # length also include the space
 print(myName.isalnum())  # Return True if the string is an alpha-numeric string, False otherwise.
 print(myName.isalpha(), "\n")  # Return True if the string is an alphabetic string, False otherwise
 
+print("\n.......................................................")
 str1 = "HelloWorld123"
 str2 = "HelloWorld"
 str3 = "123"
-str4 = "Hello World 123"
+str4 = "Hello World 123" # contain space which is a special character, that's why false
 print(str1.isalnum())  # it means either alphabetical or numeric
 print(str2.isalnum())
 print(str3.isalnum())
 print(str4.isalnum(), "\n")  # False -- because contain spaces, which is regarded as special
 
+print("\n.......................................................")
+str3 = "123"
 print(str3.isalnum())
 print(str3.isnumeric())
-print(str3.isdecimal())
+print(str3.isdecimal())  # confusing
 print(str3.isdigit(), "\n")
 
-
+print("\n.......................................................")
+myName = "Subdermatoglyphic"
 print(myName.endswith("phic"))
 print(myName.endswith("PHIC"))  # case sensitive
 print(myName.startswith("Sub"))
 print(myName.startswith("sub"))  # Case sensitive
 print("\n")
 
+print("\n.......................................................")
+myName = "subdermatoglyphic"
 print(myName.capitalize())  # Return More specifically, make the first character - upper case and the rest - lower case.
 print(myName.upper())  # Return a copy of the string converted to uppercase.
 print(myName.lower())  # Return a copy of the string converted to lowercase.
@@ -36,6 +43,9 @@ Return the lowest index in S where substring sub is found, such that sub is cont
 Return -1 on failure. """
 print(myName.replace("phic", " many"))  # Return a copy with all occurrences of substring old replaced by new.
 
+print("\n.......................................................")
+# for 'String slice', we use 'range operator'
+myName = "Subdermatogclyphi"
 print(myName[0])  # Value at index 0
 print(myName[1])  # Value at index 1
 print(myName[2])
@@ -45,6 +55,8 @@ print(myName[-1])  # Value at index [length -1]
 print(myName[-2])  # Value at index [length -2]
 print(myName[-3])
 
+print("\n.......................................................")
+myName = "Subdermatoglyphic"
 print((myName[0:16]))  # 0 is initialized value and 16 is conditional value <16
 print((myName[1:16]))
 print((myName[2:16]))
@@ -53,6 +65,8 @@ print((myName[4:11]))  # 4 is initialized value and 11 is conditional value <11
 print((myName[0:25]))  # 0 is initialized value and 25 is conditional value <25, although the length is not 25
 print((myName[6:25]))  # 6 is initialized value and 25 is conditional value <25, although the length is not 25
 
+print("\n.......................................................")
+myName = "Subdermatoglyphic"
 print(myName[::2])  # value present in index 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
 print(myName[::6])  # value present in index 0, 6, 12, 18
 
